@@ -1,0 +1,251 @@
+request_id,amount_safe_to_pay,affordability_status,recommended_payment_method,payment_plan,earliest_date_for_full_payment,spending_changes_needed,decision_explanation
+request_26,15656000.00,affordable_now,full_payment,2025-08-03:15656000.00,2025-08-03,none,Pay IDR 15656000.00 today. This leaves at least IDR 24768300.00 available over the forecast.
+request_27,6670.00,affordable_now,full_payment,2026-07-05:6670.00,2026-07-05,none,Pay ZAR 6670.00 today. This leaves at least ZAR 20500.00 available over the forecast.
+request_28,567.97,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2024-08-15 while preserving the EUR 1100.00 minimum.
+request_29,51524.00,affordable_now,full_payment,2025-11-04:51524.00,,none,Pay ZAR 51524.00 today. This leaves at least ZAR 28300.00 available over the forecast.
+request_30,775.20,affordable_with_plan,installments,2026-04-06:268.74|2026-05-06:268.74|2026-06-05:268.74,2026-04-06,none,Use the supplied installment schedule starting 2026-04-06; projected payments keep at least USD 900.00 available.
+request_31,4401409.44,affordable_later,wait,2024-11-15:18164000.00,2024-11-15,none,Wait and pay IDR 18164000.00 in full on 2024-11-15 when the forecast stays above the IDR 16588900.00 minimum.
+request_32,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-04-15 while preserving the ZAR 35700.00 minimum.
+request_33,55854.60,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-03-15 while preserving the INR 102100.00 minimum.
+request_34,129400.00,affordable_now,full_payment,2024-12-04:129400.00,2024-12-04,none,Pay INR 129400.00 today. This leaves at least INR 138500.00 available over the forecast.
+request_35,50611.82,affordable_later,wait,2026-01-15:212000.00,2026-01-15,none,Wait and pay INR 212000.00 in full on 2026-01-15 when the forecast stays above the INR 106400.00 minimum.
+request_36,1068.80,affordable_later,wait,2026-09-15:3954.00,2026-09-15,none,Wait and pay USD 3954.00 in full on 2026-09-15 when the forecast stays above the USD 2400.00 minimum.
+request_37,10269536.17,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2024-05-15 while preserving the IDR 17056200.00 minimum.
+request_38,276.09,affordable_later,wait,2025-09-15:971.30,2025-09-15,none,Wait and pay EUR 971.30 in full on 2025-09-15 when the forecast stays above the EUR 400.00 minimum.
+request_39,93246.56,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-06-15 while preserving the INR 213400.00 minimum.
+request_40,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2024-08-15 while preserving the EUR 1500.00 minimum.
+request_41,17615366.78,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-01-15 while preserving the IDR 25366600.00 minimum.
+request_42,52100.00,affordable_now,full_payment,2026-01-05:52100.00,2026-01-05,none,Pay INR 52100.00 today. This leaves at least INR 113100.00 available over the forecast.
+request_43,10019699.10,affordable_later,wait,2024-11-15:43339000.00,2024-11-15,none,Wait and pay IDR 43339000.00 in full on 2024-11-15 when the forecast stays above the IDR 21398000.00 minimum.
+request_44,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-04-15 while preserving the INR 82900.00 minimum.
+request_45,6298324.97,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-09-15 while preserving the IDR 11149800.00 minimum.
+request_46,49450.00,affordable_with_plan,installments,2024-12-03:25714.00|2024-12-31:25714.00,2025-01-15,none,Use the supplied installment schedule starting 2024-12-03; projected payments keep at least INR 84000.00 available.
+request_47,38114000.00,affordable_now,full_payment,2025-05-05:38114000.00,2025-05-05,none,Pay IDR 38114000.00 today. This leaves at least IDR 30049000.00 available over the forecast.
+request_48,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-08-24 while preserving the INR 71300.00 minimum.
+request_49,17713114.60,affordable_with_plan,installments,2024-03-18:11902106.67|2024-04-18:11902106.67|2024-05-19:11902106.67,,none,Use the supplied installment schedule starting 2024-03-18; projected payments keep at least IDR 20275700.00 available.
+request_50,43900.00,affordable_now,full_payment,2025-08-06:43900.00,2025-08-06,none,Pay INR 43900.00 today. This leaves at least INR 99700.00 available over the forecast.
+request_51,2191000.00,affordable_now,full_payment,2026-01-03:2191000.00,2026-01-03,none,Pay IDR 2191000.00 today. This leaves at least IDR 7811000.00 available over the forecast.
+request_52,21957.31,affordable_later,wait,2024-06-15:28870.00,2024-06-15,none,Wait and pay INR 28870.00 in full on 2024-06-15 when the forecast stays above the INR 41500.00 minimum.
+request_53,684.86,affordable_with_plan,installments,2025-11-21:589.06|2025-12-19:589.06|2026-01-16:589.06,2026-01-15,none,Use the supplied installment schedule starting 2025-11-21; projected payments keep at least USD 2100.00 available.
+request_54,8331.10,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-08-21 while preserving the ZAR 37000.00 minimum.
+request_55,160083.36,affordable_with_plan,installments,2026-06-11:75781.33|2026-07-12:75781.33|2026-08-12:75781.33,2026-08-15,none,Use the supplied installment schedule starting 2026-06-11; projected payments keep at least INR 124300.00 available.
+request_56,881.56,affordable_with_plan,installments,2025-02-03:458.42|2025-03-03:458.42,2025-02-15,none,Use the supplied installment schedule starting 2025-02-03; projected payments keep at least USD 2100.00 available.
+request_57,15592.90,affordable_later,wait,2026-06-15:61446.00,2026-06-15,none,Wait and pay ZAR 61446.00 in full on 2026-06-15 when the forecast stays above the ZAR 42700.00 minimum.
+request_58,16226000.00,affordable_now,full_payment,2024-12-07:16226000.00,2024-12-07,none,Pay IDR 16226000.00 today. This leaves at least IDR 14433900.00 available over the forecast.
+request_59,140600.00,affordable_with_plan,installments,2025-05-07:48741.33|2025-06-04:48741.33|2025-07-02:48741.33,2025-05-04,none,Use the supplied installment schedule starting 2025-05-07; projected payments keep at least INR 132600.00 available.
+request_60,198.49,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-03-04 while preserving the USD 400.00 minimum.
+request_61,29062.00,affordable_with_plan,installments,2024-03-17:10074.83|2024-04-17:10074.83|2024-05-18:10074.83,,none,Use the supplied installment schedule starting 2024-03-17; projected payments keep at least ZAR 36700.00 available.
+request_62,404.23,affordable_now,full_payment,2025-08-05:404.23,2025-08-05,none,Pay USD 404.23 today. This leaves at least USD 1300.00 available over the forecast.
+request_63,20956.84,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-09-17 while preserving the INR 153500.00 minimum.
+request_64,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2024-08-16 while preserving the INR 36100.00 minimum.
+request_65,10288.76,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-11-25 while preserving the ZAR 15500.00 minimum.
+request_66,22200.00,affordable_now,full_payment,2026-04-03:22200.00,2026-04-03,none,Pay INR 22200.00 today. This leaves at least INR 80700.00 available over the forecast.
+request_67,520.14,affordable_later,wait,2024-11-15:2094.00,2024-11-15,none,Wait and pay USD 2094.00 in full on 2024-11-15 when the forecast stays above the USD 1200.00 minimum.
+request_68,1729.24,affordable_with_plan,installments,2025-02-14:725.09|2025-03-14:725.09|2025-04-11:725.09,2025-04-15,none,Use the supplied installment schedule starting 2025-02-14; projected payments keep at least USD 1500.00 available.
+request_69,529.10,affordable_now,full_payment,2026-01-04:529.10,2026-03-15,none,Pay EUR 529.10 today. This leaves at least EUR 700.00 available over the forecast.
+request_70,61892.21,affordable_later,wait,2025-02-15:243900.00,2025-02-15,none,Wait and pay INR 243900.00 in full on 2025-02-15 when the forecast stays above the INR 115000.00 minimum.
+request_71,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-05-28 while preserving the IDR 8884800.00 minimum.
+request_72,5002.53,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-07-14 while preserving the ZAR 12200.00 minimum.
+request_73,71400.00,affordable_now,full_payment,2023-01-20:71400.00,2023-02-15,none,Pay INR 71400.00 today. This leaves at least INR 103200.00 available over the forecast.
+request_74,5010.00,affordable_now,full_payment,2025-08-04:5010.00,2025-08-04,none,Pay ZAR 5010.00 today. This leaves at least ZAR 21900.00 available over the forecast.
+request_75,28270.00,affordable_with_plan,installments,2026-04-09:9800.27|2026-05-09:9800.27|2026-06-08:9800.27,,none,Use the supplied installment schedule starting 2026-04-09; projected payments keep at least ZAR 39000.00 available.
+request_76,1169.59,not_affordable,not_recommended,none,2024-08-15,none,Do not proceed: no accepted payment plan completes by 2024-07-30 while preserving the USD 1800.00 minimum.
+request_77,60700.00,affordable_now,full_payment,2025-11-05:60700.00,2025-11-15,none,Pay INR 60700.00 today. This leaves at least INR 82200.00 available over the forecast.
+request_78,50200.00,affordable_now,full_payment,2025-10-02:50200.00,2025-11-15,none,Pay INR 50200.00 today. This leaves at least INR 55200.00 available over the forecast.
+request_79,601.46,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2024-11-01 while preserving the EUR 1000.00 minimum.
+request_80,120590.99,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-02-21 while preserving the INR 121300.00 minimum.
+request_81,2076.00,affordable_now,full_payment,2026-07-03:2076.00,2026-09-15,none,Pay USD 2076.00 today. This leaves at least USD 1600.00 available over the forecast.
+request_82,810.64,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-02-15 while preserving the USD 1100.00 minimum.
+request_83,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-06-17 while preserving the INR 37800.00 minimum.
+request_84,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-06-15 while preserving the INR 91300.00 minimum.
+request_85,1838946.08,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2024-04-26 while preserving the IDR 6396300.00 minimum.
+request_86,46300.00,affordable_now,full_payment,2025-08-03:46300.00,2025-08-03,none,Pay INR 46300.00 today. This leaves at least INR 84900.00 available over the forecast.
+request_87,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-03-15 while preserving the INR 185900.00 minimum.
+request_88,12235.89,affordable_with_plan,installments,2024-06-14:9045.23|2024-07-15:9045.23|2024-08-15:9045.23,2024-07-15,none,Use the supplied installment schedule starting 2024-06-14; projected payments keep at least ZAR 25800.00 available.
+request_89,13482247.12,affordable_with_plan,installments,2025-11-18:4768746.67|2025-12-16:4768746.67|2026-01-13:4768746.67,2026-01-15,none,Use the supplied installment schedule starting 2025-11-18; projected payments keep at least IDR 12534700.00 available.
+request_90,2560.00,affordable_now,full_payment,2026-07-06:2560.00,2026-07-06,none,Pay ZAR 2560.00 today. This leaves at least ZAR 7600.00 available over the forecast.
+request_91,850.74,affordable_later,wait,2024-11-15:1927.20,2024-11-15,none,Wait and pay EUR 1927.20 in full on 2024-11-15 when the forecast stays above the EUR 2100.00 minimum.
+request_92,34034.00,affordable_now,full_payment,2025-02-05:34034.00,2025-02-05,none,Pay ZAR 34034.00 today. This leaves at least ZAR 28100.00 available over the forecast.
+request_93,1729.20,affordable_now,full_payment,2026-04-07:1729.20,2026-04-07,none,Pay USD 1729.20 today. This leaves at least USD 1900.00 available over the forecast.
+request_94,572.00,affordable_now,full_payment,2024-12-04:572.00,2024-12-04,none,Pay EUR 572.00 today. This leaves at least EUR 600.00 available over the forecast.
+request_95,100415.82,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-07-14 while preserving the INR 145500.00 minimum.
+request_96,33282.56,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-03-12 while preserving the INR 56500.00 minimum.
+request_97,3129.42,affordable_with_plan,installments,2024-03-19:8145.28|2024-04-19:8145.28|2024-05-20:8145.28,2024-05-15,none,Use the supplied installment schedule starting 2024-03-19; projected payments keep at least ZAR 29700.00 available.
+request_98,10229.81,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-10-15 while preserving the ZAR 30000.00 minimum.
+request_99,18062.00,affordable_now,full_payment,2026-07-04:18062.00,2026-07-15,none,Pay ZAR 18062.00 today. This leaves at least ZAR 49100.00 available over the forecast.
+request_100,31276.26,affordable_with_plan,installments,2024-06-13:12866.19|2024-07-14:12866.19|2024-08-14:12866.19,2024-08-15,none,Use the supplied installment schedule starting 2024-06-13; projected payments keep at least ZAR 32500.00 available.
+request_101,143500.00,affordable_now,full_payment,2025-11-03:143500.00,2025-11-03,none,Pay INR 143500.00 today. This leaves at least INR 187400.00 available over the forecast.
+request_102,1716.00,affordable_with_plan,installments,2026-04-05:594.88|2026-05-05:594.88|2026-06-04:594.88,2026-04-05,none,Use the supplied installment schedule starting 2026-04-05; projected payments keep at least EUR 900.00 available.
+request_103,18745.58,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2024-10-07 while preserving the INR 125500.00 minimum.
+request_104,17204.00,affordable_now,full_payment,2025-02-04:17204.00,2025-04-15,none,Pay ZAR 17204.00 today. This leaves at least ZAR 24700.00 available over the forecast.
+request_105,53500.00,affordable_now,full_payment,2026-06-08:53500.00,,none,Pay INR 53500.00 today. This leaves at least INR 73900.00 available over the forecast.
+request_106,561.44,affordable_later,wait,2024-12-15:2207.70,2024-12-15,none,Wait and pay EUR 2207.70 in full on 2024-12-15 when the forecast stays above the EUR 1200.00 minimum.
+request_107,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-07-04 while preserving the EUR 1600.00 minimum.
+request_108,5533.15,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-07-26 while preserving the ZAR 24100.00 minimum.
+request_109,1082.90,affordable_with_plan,installments,2024-03-18:645.98|2024-04-18:645.98|2024-05-19:645.98,2024-05-15,none,Use the supplied installment schedule starting 2024-03-18; projected payments keep at least EUR 1700.00 available.
+request_110,22352.00,affordable_with_plan,installments,2025-08-06:7748.69|2025-09-03:7748.69|2025-10-01:7748.69,2025-08-06,none,Use the supplied installment schedule starting 2025-08-06; projected payments keep at least ZAR 11200.00 available.
+request_111,16625000.00,affordable_now,full_payment,2026-04-03:16625000.00,2026-04-03,none,Pay IDR 16625000.00 today. This leaves at least IDR 23022800.00 available over the forecast.
+request_112,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2024-06-14 while preserving the EUR 500.00 minimum.
+request_113,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-10-19 while preserving the INR 82300.00 minimum.
+request_114,65300.00,affordable_now,full_payment,2026-01-04:65300.00,,none,Pay INR 65300.00 today. This leaves at least INR 113400.00 available over the forecast.
+request_115,16946.71,affordable_later,wait,2024-11-15:80500.00,2024-11-15,none,Wait and pay INR 80500.00 in full on 2024-11-15 when the forecast stays above the INR 38800.00 minimum.
+request_116,23087.46,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-04-16 while preserving the INR 80300.00 minimum.
+request_117,880.00,affordable_now,full_payment,2026-07-05:880.00,2026-07-15,none,Pay EUR 880.00 today. This leaves at least EUR 1000.00 available over the forecast.
+request_118,738.10,affordable_with_plan,installments,2024-12-07:255.87|2025-01-07:255.87|2025-02-07:255.87,2025-02-15,none,Use the supplied installment schedule starting 2024-12-07; projected payments keep at least EUR 600.00 available.
+request_119,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-07-17 while preserving the INR 151200.00 minimum.
+request_120,7714000.00,affordable_now,full_payment,2026-04-06:7714000.00,2026-04-06,none,Pay IDR 7714000.00 today. This leaves at least IDR 20050300.00 available over the forecast.
+request_121,633.60,affordable_now,full_payment,2024-03-03:633.60,2024-03-03,none,Pay USD 633.60 today. This leaves at least USD 800.00 available over the forecast.
+request_122,20558000.00,affordable_with_plan,installments,2025-08-05:7126773.33|2025-09-02:7126773.33|2025-09-30:7126773.33,2025-08-05,none,Use the supplied installment schedule starting 2025-08-05; projected payments keep at least IDR 12588500.00 available.
+request_123,4076000.00,affordable_now,full_payment,2026-01-07:4076000.00,2026-01-07,none,Pay IDR 4076000.00 today. This leaves at least IDR 18091200.00 available over the forecast.
+request_124,1510.92,affordable_with_plan,installments,2024-06-11:1076.12|2024-07-12:1076.12|2024-08-12:1076.12,2024-08-15,none,Use the supplied installment schedule starting 2024-06-11; projected payments keep at least EUR 1600.00 available.
+request_125,6468.00,affordable_now,full_payment,2025-11-06:6468.00,,none,Pay ZAR 6468.00 today. This leaves at least ZAR 11300.00 available over the forecast.
+request_126,159600.00,affordable_now,full_payment,2026-07-03:159600.00,2026-07-03,none,Pay INR 159600.00 today. This leaves at least INR 129700.00 available over the forecast.
+request_127,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2024-10-18 while preserving the ZAR 41000.00 minimum.
+request_128,25168.00,affordable_now,full_payment,2025-02-07:25168.00,2025-02-07,none,Pay ZAR 25168.00 today. This leaves at least ZAR 42600.00 available over the forecast.
+request_129,175.74,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-06-18 while preserving the USD 800.00 minimum.
+request_130,668.62,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-02-15 while preserving the USD 1400.00 minimum.
+request_131,1730.65,affordable_with_plan,installments,2025-05-06:643.14|2025-06-03:643.14|2025-07-01:643.14,2025-06-15,none,Use the supplied installment schedule starting 2025-05-06; projected payments keep at least USD 1100.00 available.
+request_132,379.86,affordable_now,full_payment,2026-01-05:379.86,,none,Pay USD 379.86 today. This leaves at least USD 1100.00 available over the forecast.
+request_133,15770000.00,not_affordable,not_recommended,none,2024-03-07,none,Do not proceed: no accepted payment plan completes by 2024-03-29 while preserving the IDR 9986200.00 minimum.
+request_134,7987630.37,affordable_later,wait,2025-10-15:21831000.00,2025-10-15,none,Wait and pay IDR 21831000.00 in full on 2025-10-15 when the forecast stays above the IDR 15902500.00 minimum.
+request_135,304.80,affordable_now,full_payment,2026-07-06:304.80,2026-07-15,none,Pay USD 304.80 today. This leaves at least USD 500.00 available over the forecast.
+request_136,560.40,affordable_now,full_payment,2024-06-03:560.40,2024-06-15,none,Pay USD 560.40 today. This leaves at least USD 1100.00 available over the forecast.
+request_137,58334.88,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-01-15 while preserving the INR 71800.00 minimum.
+request_138,920.78,affordable_with_plan,partial_payment,2026-04-07:920.78|2026-04-15:336.16,2026-04-15,none,Pay EUR 920.78 today and the remaining balance on 2026-04-15; the forecast stays above the minimum balance.
+request_139,1429.02,affordable_with_plan,installments,2024-09-07:802.88|2024-10-08:802.88|2024-11-08:802.88,2024-11-15,none,Use the supplied installment schedule starting 2024-09-07; projected payments keep at least USD 1500.00 available.
+request_140,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-03-04 while preserving the ZAR 21600.00 minimum.
+request_141,42394.66,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-02-12 while preserving the INR 67300.00 minimum.
+request_142,1263.60,affordable_now,full_payment,2024-12-05:1263.60,2024-12-05,none,Pay USD 1263.60 today. This leaves at least USD 1700.00 available over the forecast.
+request_143,4013.96,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-07-15 while preserving the ZAR 11300.00 minimum.
+request_144,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-07-26 while preserving the USD 600.00 minimum.
+request_145,85360.60,affordable_with_plan,installments,2024-03-20:75365.33|2024-04-20:75365.33|2024-05-21:75365.33,,none,Use the supplied installment schedule starting 2024-03-20; projected payments keep at least INR 155400.00 available.
+request_146,43720.77,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-10-17 while preserving the INR 108600.00 minimum.
+request_147,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-06-07 while preserving the EUR 900.00 minimum.
+request_148,10619.11,affordable_with_plan,installments,2024-06-14:7710.56|2024-07-15:7710.56|2024-08-15:7710.56,2024-08-15,none,Use the supplied installment schedule starting 2024-06-14; projected payments keep at least ZAR 20000.00 available.
+request_149,34205.96,affordable_with_plan,installments,2025-11-18:12706.03|2025-12-16:12706.03|2026-01-13:12706.03,2026-01-15,none,Use the supplied installment schedule starting 2025-11-18; projected payments keep at least ZAR 42100.00 available.
+request_150,487.40,affordable_with_plan,installments,2026-01-06:171.98|2026-02-05:171.98|2026-03-07:171.98,,none,Use the supplied installment schedule starting 2026-01-06; projected payments keep at least EUR 700.00 available.
+request_151,26999000.00,affordable_now,full_payment,2024-09-03:26999000.00,2024-09-03,none,Pay IDR 26999000.00 today. This leaves at least IDR 31633600.00 available over the forecast.
+request_152,12849.78,affordable_with_plan,installments,2025-02-12:4812.43|2025-03-12:4812.43|2025-04-09:4812.43,2025-04-15,none,Use the supplied installment schedule starting 2025-02-12; projected payments keep at least ZAR 11900.00 available.
+request_153,404.83,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-09-24 while preserving the USD 1400.00 minimum.
+request_154,1625.80,affordable_with_plan,installments,2024-12-04:563.61|2025-01-04:563.61|2025-02-04:563.61,2024-12-04,none,Use the supplied installment schedule starting 2024-12-04; projected payments keep at least EUR 1300.00 available.
+request_155,105137.72,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-05-20 while preserving the INR 56300.00 minimum.
+request_156,10177.18,affordable_later,wait,2026-06-15:43076.00,2026-06-15,none,Wait and pay ZAR 43076.00 in full on 2026-06-15 when the forecast stays above the ZAR 26900.00 minimum.
+request_157,8027804.66,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2024-05-15 while preserving the IDR 15714100.00 minimum.
+request_158,242600.00,affordable_with_plan,installments,2025-08-07:84101.33|2025-09-04:84101.33|2025-10-02:84101.33,2025-08-07,none,Use the supplied installment schedule starting 2025-08-07; projected payments keep at least INR 131400.00 available.
+request_159,13398.00,affordable_now,full_payment,2026-01-04:13398.00,2026-01-04,none,Pay ZAR 13398.00 today. This leaves at least ZAR 8700.00 available over the forecast.
+request_160,658.61,affordable_with_plan,installments,2024-06-13:432.05|2024-07-14:432.05|2024-08-14:432.05,2024-06-15,none,Use the supplied installment schedule starting 2024-06-13; projected payments keep at least EUR 1200.00 available.
+request_161,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-01-15 while preserving the IDR 23010400.00 minimum.
+request_162,6031637.84,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-08-26 while preserving the IDR 24161100.00 minimum.
+request_163,17320780.70,affordable_with_plan,installments,2024-09-10:6692053.33|2024-10-11:6692053.33|2024-11-11:6692053.33,2024-11-15,none,Use the supplied installment schedule starting 2024-09-10; projected payments keep at least IDR 26728700.00 available.
+request_164,27018000.00,affordable_with_plan,installments,2025-02-11:9366240.00|2025-03-11:9366240.00|2025-04-08:9366240.00,2025-02-04,none,Use the supplied installment schedule starting 2025-02-11; projected payments keep at least IDR 29550500.00 available.
+request_165,80600.00,affordable_now,full_payment,2026-04-06:80600.00,,none,Pay INR 80600.00 today. This leaves at least INR 95000.00 available over the forecast.
+request_166,2907.60,affordable_with_plan,installments,2024-12-03:1007.97|2025-01-03:1007.97|2025-02-03:1007.97,2024-12-03,none,Use the supplied installment schedule starting 2024-12-03; projected payments keep at least USD 1700.00 available.
+request_167,43802.00,affordable_now,full_payment,2025-05-05:43802.00,2025-05-05,none,Pay ZAR 43802.00 today. This leaves at least ZAR 31200.00 available over the forecast.
+request_168,49380.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-03-16 while preserving the INR 114400.00 minimum.
+request_169,18639.34,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2024-05-16 while preserving the ZAR 18700.00 minimum.
+request_170,35155164.18,affordable_with_plan,installments,2025-08-06:12804480.00|2025-09-03:12804480.00|2025-10-01:12804480.00,2025-10-15,none,Use the supplied installment schedule starting 2025-08-06; projected payments keep at least IDR 24715800.00 available.
+request_171,145.11,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-09-10 while preserving the EUR 500.00 minimum.
+request_172,10200.00,affordable_with_plan,installments,2024-06-05:5304.00|2024-07-03:5304.00,2024-07-15,none,Use the supplied installment schedule starting 2024-06-05; projected payments keep at least ZAR 27200.00 available.
+request_173,33462.35,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-01-17 while preserving the INR 79100.00 minimum.
+request_174,1146.20,affordable_with_plan,installments,2026-04-04:397.35|2026-05-04:397.35|2026-06-03:397.35,2026-04-04,none,Use the supplied installment schedule starting 2026-04-04; projected payments keep at least EUR 700.00 available.
+request_175,2346.30,affordable_now,full_payment,2024-09-06:2346.30,2024-09-06,none,Pay EUR 2346.30 today. This leaves at least EUR 1700.00 available over the forecast.
+request_176,508.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-02-27 while preserving the EUR 600.00 minimum.
+request_177,1017.60,affordable_now,full_payment,2026-01-05:1017.60,,none,Pay USD 1017.60 today. This leaves at least USD 1300.00 available over the forecast.
+request_178,2938.10,affordable_with_plan,installments,2024-12-07:1018.54|2025-01-07:1018.54|2025-02-07:1018.54,2024-12-07,none,Use the supplied installment schedule starting 2024-12-07; projected payments keep at least EUR 1400.00 available.
+request_179,13170339.08,affordable_later,wait,2025-07-15:41648000.00,2025-07-15,none,Wait and pay IDR 41648000.00 in full on 2025-07-15 when the forecast stays above the IDR 41430800.00 minimum.
+request_180,30494.93,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-09-02 while preserving the INR 37300.00 minimum.
+request_181,949.37,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2024-04-07 while preserving the USD 2000.00 minimum.
+request_182,65714.00,affordable_now,full_payment,2025-08-05:65714.00,2025-08-05,none,Pay ZAR 65714.00 today. This leaves at least ZAR 31100.00 available over the forecast.
+request_183,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-06-18 while preserving the IDR 11878300.00 minimum.
+request_184,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2024-07-30 while preserving the INR 110800.00 minimum.
+request_185,659.25,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-01-15 while preserving the EUR 1300.00 minimum.
+request_186,12058.71,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-03-15 while preserving the ZAR 22000.00 minimum.
+request_187,46817.87,affordable_later,wait,2024-09-15:187500.00,2024-09-15,none,Wait and pay INR 187500.00 in full on 2024-09-15 when the forecast stays above the INR 128300.00 minimum.
+request_188,195.82,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-03-04 while preserving the EUR 900.00 minimum.
+request_189,488.40,affordable_now,full_payment,2026-07-04:488.40,2026-07-04,none,Pay EUR 488.40 today. This leaves at least EUR 400.00 available over the forecast.
+request_190,1247.37,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-02-15 while preserving the EUR 1600.00 minimum.
+request_191,664.40,affordable_now,full_payment,2025-05-03:664.40,2025-05-03,none,Pay EUR 664.40 today. This leaves at least EUR 500.00 available over the forecast.
+request_192,230.76,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-05-11 while preserving the USD 1000.00 minimum.
+request_193,178.96,affordable_with_plan,installments,2024-03-21:420.23|2024-04-21:420.23|2024-05-22:420.23,2024-05-15,none,Use the supplied installment schedule starting 2024-03-21; projected payments keep at least EUR 1000.00 available.
+request_194,75736.83,affordable_later,wait,2025-10-15:132800.00,2025-10-15,none,Wait and pay INR 132800.00 in full on 2025-10-15 when the forecast stays above the INR 113600.00 minimum.
+request_195,1170.40,affordable_with_plan,installments,2026-01-09:405.74|2026-02-08:405.74|2026-03-10:405.74,,none,Use the supplied installment schedule starting 2026-01-09; projected payments keep at least EUR 700.00 available.
+request_196,762.30,affordable_now,full_payment,2024-06-03:762.30,2024-06-03,none,Pay EUR 762.30 today. This leaves at least EUR 500.00 available over the forecast.
+request_197,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-01-21 while preserving the IDR 26245900.00 minimum.
+request_198,185800.00,affordable_now,full_payment,2026-07-07:185800.00,2026-07-07,none,Pay INR 185800.00 today. This leaves at least INR 124300.00 available over the forecast.
+request_199,23674000.00,affordable_with_plan,installments,2024-09-07:8206986.67|2024-10-08:8206986.67|2024-11-08:8206986.67,2024-09-04,none,Use the supplied installment schedule starting 2024-09-07; projected payments keep at least IDR 25359500.00 available.
+request_200,21717000.00,affordable_now,full_payment,2025-02-06:21717000.00,2025-02-06,none,Pay IDR 21717000.00 today. This leaves at least IDR 20114600.00 available over the forecast.
+request_201,23997000.00,affordable_now,full_payment,2026-04-03:23997000.00,2026-04-03,none,Pay IDR 23997000.00 today. This leaves at least IDR 17304500.00 available over the forecast.
+request_202,123900.00,affordable_now,full_payment,2024-12-05:123900.00,2024-12-05,none,Pay INR 123900.00 today. This leaves at least INR 147800.00 available over the forecast.
+request_203,1442.10,affordable_with_plan,installments,2025-05-10:499.93|2025-06-07:499.93|2025-07-05:499.93,2025-05-07,none,Use the supplied installment schedule starting 2025-05-10; projected payments keep at least EUR 1400.00 available.
+request_204,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-01-31 while preserving the EUR 1300.00 minimum.
+request_205,10621000.00,affordable_now,full_payment,2024-03-06:10621000.00,2024-03-06,none,Pay IDR 10621000.00 today. This leaves at least IDR 13994300.00 available over the forecast.
+request_206,1404.70,affordable_with_plan,installments,2025-08-03:486.96|2025-08-31:486.96|2025-09-28:486.96,2025-08-03,none,Use the supplied installment schedule starting 2025-08-03; projected payments keep at least EUR 900.00 available.
+request_207,8156.41,affordable_later,wait,2026-07-15:11830.00,2026-07-15,none,Wait and pay ZAR 11830.00 in full on 2026-07-15 when the forecast stays above the ZAR 13600.00 minimum.
+request_208,4413000.00,affordable_now,full_payment,2024-06-07:4413000.00,2024-06-15,none,Pay IDR 4413000.00 today. This leaves at least IDR 10470700.00 available over the forecast.
+request_209,5769.64,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-11-25 while preserving the ZAR 18400.00 minimum.
+request_210,1049.14,affordable_with_plan,partial_payment,2026-04-06:1049.14|2026-04-15:310.88,2026-04-15,none,Pay USD 1049.14 today and the remaining balance on 2026-04-15; the forecast stays above the minimum balance.
+request_211,472.33,affordable_later,wait,2024-11-15:1788.60,2024-11-15,none,Wait and pay EUR 1788.60 in full on 2024-11-15 when the forecast stays above the EUR 1500.00 minimum.
+request_212,14593148.35,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-02-28 while preserving the IDR 29579800.00 minimum.
+request_213,3362.40,affordable_with_plan,installments,2026-01-21:1165.63|2026-02-20:1165.63|2026-03-22:1165.63,,none,Use the supplied installment schedule starting 2026-01-21; projected payments keep at least USD 2100.00 available.
+request_214,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-01-28 while preserving the INR 174900.00 minimum.
+request_215,29986.00,affordable_with_plan,installments,2025-05-09:10395.15|2025-06-06:10395.15|2025-07-04:10395.15,2025-05-06,none,Use the supplied installment schedule starting 2025-05-09; projected payments keep at least ZAR 15700.00 available.
+request_216,871.29,affordable_later,wait,2026-09-15:3332.40,2026-09-15,none,Wait and pay USD 3332.40 in full on 2026-09-15 when the forecast stays above the USD 1800.00 minimum.
+request_217,28705.30,affordable_with_plan,installments,2024-03-19:12889.07|2024-04-19:12889.07|2024-05-20:12889.07,,none,Use the supplied installment schedule starting 2024-03-19; projected payments keep at least ZAR 26800.00 available.
+request_218,31381022.02,affordable_with_plan,installments,2025-08-07:21195893.33|2025-09-04:21195893.33|2025-10-02:21195893.33,2025-09-15,none,Use the supplied installment schedule starting 2025-08-07; projected payments keep at least IDR 34477200.00 available.
+request_219,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-06-13 while preserving the EUR 1100.00 minimum.
+request_220,200.91,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2024-07-03 while preserving the EUR 1100.00 minimum.
+request_221,109800.00,affordable_now,full_payment,2025-11-03:109800.00,2025-11-03,none,Pay INR 109800.00 today. This leaves at least INR 81500.00 available over the forecast.
+request_222,34078.00,affordable_now,full_payment,2026-01-05:34078.00,2026-01-05,none,Pay ZAR 34078.00 today. This leaves at least ZAR 27300.00 available over the forecast.
+request_223,898.70,affordable_now,full_payment,2024-09-07:898.70,2024-09-07,none,Pay EUR 898.70 today. This leaves at least EUR 800.00 available over the forecast.
+request_224,10327000.00,affordable_with_plan,installments,2025-02-04:5370040.00|2025-03-04:5370040.00,2025-04-15,none,Use the supplied installment schedule starting 2025-02-04; projected payments keep at least IDR 22187600.00 available.
+request_225,16030000.02,affordable_with_plan,installments,2026-07-20:7647120.00|2026-08-19:7647120.00|2026-09-18:7647120.00,2026-09-15,none,Use the supplied installment schedule starting 2026-07-20; projected payments keep at least IDR 17670700.00 available.
+request_226,157000.00,affordable_now,full_payment,2024-12-03:157000.00,2025-02-15,none,Pay INR 157000.00 today. This leaves at least INR 209400.00 available over the forecast.
+request_227,20350.59,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-06-20 while preserving the INR 62900.00 minimum.
+request_228,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-04-30 while preserving the IDR 26191200.00 minimum.
+request_229,642.55,affordable_with_plan,installments,2024-03-18:529.29|2024-04-18:529.29|2024-05-19:529.29,,none,Use the supplied installment schedule starting 2024-03-18; projected payments keep at least EUR 1000.00 available.
+request_230,3537.60,affordable_now,full_payment,2025-08-06:3537.60,2025-08-06,none,Pay EUR 3537.60 today. This leaves at least EUR 2000.00 available over the forecast.
+request_231,35706.00,affordable_with_plan,installments,2026-01-06:12378.08|2026-02-05:12378.08|2026-03-07:12378.08,2026-03-15,none,Use the supplied installment schedule starting 2026-01-06; projected payments keep at least ZAR 24300.00 available.
+request_232,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2024-08-15 while preserving the EUR 2400.00 minimum.
+request_233,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-12-17 while preserving the IDR 10365700.00 minimum.
+request_234,337.01,affordable_later,wait,2026-09-15:1213.30,2026-09-15,none,Wait and pay EUR 1213.30 in full on 2026-09-15 when the forecast stays above the EUR 700.00 minimum.
+request_235,967.20,affordable_now,full_payment,2024-09-06:967.20,2024-09-06,none,Pay USD 967.20 today. This leaves at least USD 700.00 available over the forecast.
+request_236,10390961.64,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-02-23 while preserving the IDR 16768600.00 minimum.
+request_237,23826000.00,affordable_now,full_payment,2026-04-05:23826000.00,2026-04-05,none,Pay IDR 23826000.00 today. This leaves at least IDR 22431500.00 available over the forecast.
+request_238,663.60,affordable_with_plan,installments,2024-12-07:230.05|2025-01-07:230.05|2025-02-07:230.05,2024-12-07,none,Use the supplied installment schedule starting 2024-12-07; projected payments keep at least USD 700.00 available.
+request_239,177.33,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-05-24 while preserving the USD 600.00 minimum.
+request_240,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-03-20 while preserving the INR 52800.00 minimum.
+request_241,21052000.00,affordable_with_plan,installments,2024-03-17:7298026.67|2024-04-17:7298026.67|2024-05-18:7298026.67,2024-03-03,none,Use the supplied installment schedule starting 2024-03-17; projected payments keep at least IDR 19252000.00 available.
+request_242,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-08-25 while preserving the EUR 600.00 minimum.
+request_243,17468.00,affordable_now,full_payment,2026-07-07:17468.00,2026-07-07,none,Pay ZAR 17468.00 today. This leaves at least ZAR 19900.00 available over the forecast.
+request_244,25295.29,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2024-07-16 while preserving the ZAR 45900.00 minimum.
+request_245,23659.50,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-01-15 while preserving the INR 94600.00 minimum.
+request_246,64086.00,affordable_with_plan,installments,2026-04-03:22216.48|2026-05-03:22216.48|2026-06-02:22216.48,2026-04-03,none,Use the supplied installment schedule starting 2026-04-03; projected payments keep at least ZAR 39300.00 available.
+request_247,1059.30,affordable_now,full_payment,2024-09-05:1059.30,2024-09-05,none,Pay EUR 1059.30 today. This leaves at least EUR 1300.00 available over the forecast.
+request_248,1242.93,affordable_with_plan,partial_payment,2025-02-07:1242.93|2025-04-15:722.67,2025-04-15,none,Pay USD 1242.93 today and the remaining balance on 2025-04-15; the forecast stays above the minimum balance.
+request_249,273.70,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-03-15 while preserving the USD 600.00 minimum.
+request_250,17765.70,not_affordable,not_recommended,none,2025-02-15,none,Do not proceed: no accepted payment plan completes by 2025-01-18 while preserving the ZAR 35300.00 minimum.
+request_251,1513.60,not_affordable,not_recommended,none,2025-05-03,none,Do not proceed: no accepted payment plan completes by 2025-06-06 while preserving the EUR 1300.00 minimum.
+request_252,6714001.89,affordable_later,wait,2026-09-15:28082000.00,2026-09-15,none,Wait and pay IDR 28082000.00 in full on 2026-09-15 when the forecast stays above the IDR 15152200.00 minimum.
+request_253,1939.43,affordable_with_plan,installments,2024-03-21:984.60|2024-04-21:984.60|2024-05-22:984.60,,none,Use the supplied installment schedule starting 2024-03-21; projected payments keep at least EUR 2300.00 available.
+request_254,1090.86,affordable_later,wait,2025-09-15:3535.20,2025-09-15,none,Wait and pay USD 3535.20 in full on 2025-09-15 when the forecast stays above the USD 2500.00 minimum.
+request_255,3345000.00,affordable_now,full_payment,2026-04-06:3345000.00,2026-04-06,none,Pay IDR 3345000.00 today. This leaves at least IDR 9813900.00 available over the forecast.
+request_256,44104.77,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2024-08-19 while preserving the INR 168600.00 minimum.
+request_257,902.96,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-01-15 while preserving the USD 1600.00 minimum.
+request_258,1113.60,affordable_now,full_payment,2026-01-07:1113.60,2026-01-07,none,Pay USD 1113.60 today. This leaves at least USD 500.00 available over the forecast.
+request_259,295.40,affordable_later,wait,2024-11-15:935.00,2024-11-15,none,Wait and pay EUR 935.00 in full on 2024-11-15 when the forecast stays above the EUR 600.00 minimum.
+request_260,275137.20,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-04-18 while preserving the IDR 20727700.00 minimum.
+request_261,1830.40,affordable_now,full_payment,2026-07-03:1830.40,2026-07-03,none,Pay EUR 1830.40 today. This leaves at least EUR 1500.00 available over the forecast.
+request_262,9236000.00,affordable_now,full_payment,2024-12-05:9236000.00,2024-12-05,none,Pay IDR 9236000.00 today. This leaves at least IDR 31018500.00 available over the forecast.
+request_263,2336.62,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2025-06-15 while preserving the ZAR 24100.00 minimum.
+request_264,29063.22,affordable_later,wait,2026-06-15:111300.00,2026-06-15,none,Wait and pay INR 111300.00 in full on 2026-06-15 when the forecast stays above the INR 59500.00 minimum.
+request_265,45970.00,affordable_now,full_payment,2024-03-06:45970.00,,none,Pay INR 45970.00 today. This leaves at least INR 189700.00 available over the forecast.
+request_266,935.00,affordable_with_plan,installments,2025-08-03:324.13|2025-08-31:324.13|2025-09-28:324.13,2025-10-15,none,Use the supplied installment schedule starting 2025-08-03; projected payments keep at least EUR 900.00 available.
+request_267,1925.00,affordable_with_plan,installments,2026-01-08:667.33|2026-02-07:667.33|2026-03-09:667.33,2026-03-15,none,Use the supplied installment schedule starting 2026-01-08; projected payments keep at least EUR 1500.00 available.
+request_268,1148.52,affordable_with_plan,installments,2024-06-14:841.22|2024-07-15:841.22|2024-08-15:841.22,2024-07-15,none,Use the supplied installment schedule starting 2024-06-14; projected payments keep at least EUR 1400.00 available.
+request_269,0.00,not_affordable,not_recommended,none,,none,Do not proceed: no accepted payment plan completes by 2026-01-02 while preserving the ZAR 23100.00 minimum.
+request_270,348.93,not_affordable,not_recommended,none,2026-09-15,none,Do not proceed: no accepted payment plan completes by 2026-08-30 while preserving the USD 1400.00 minimum.
+request_271,41689.60,affordable_later,wait,2024-11-15:91300.00,2024-11-15,none,Wait and pay INR 91300.00 in full on 2024-11-15 when the forecast stays above the INR 58200.00 minimum.
+request_272,7410181.64,affordable_with_plan,installments,2025-02-12:4709466.67|2025-03-12:4709466.67|2025-04-09:4709466.67,2025-03-15,none,Use the supplied installment schedule starting 2025-02-12; projected payments keep at least IDR 7508600.00 available.
+request_273,11808032.30,affordable_with_plan,partial_payment,2026-04-07:11808032.30|2026-04-15:4052967.70,2026-04-15,none,Pay IDR 11808032.30 today and the remaining balance on 2026-04-15; the forecast stays above the minimum balance.
+request_274,2713.70,affordable_with_plan,installments,2024-12-04:940.75|2025-01-04:940.75|2025-02-04:940.75,2025-02-15,none,Use the supplied installment schedule starting 2024-12-04; projected payments keep at least EUR 1800.00 available.
+request_275,15884000.00,affordable_now,full_payment,2025-05-06:15884000.00,2025-05-06,none,Pay IDR 15884000.00 today. This leaves at least IDR 12760100.00 available over the forecast.
