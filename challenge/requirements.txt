@@ -1,0 +1,3 @@
+# Runtime uses Python standard library and the external Tesseract OCR program.
+# Regression tests additionally require Pillow for the synthetic image fixture.
+Pillow>=10

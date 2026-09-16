@@ -1,0 +1,29 @@
+{
+  "baseline": {
+    "n": 25,
+    "matches": {
+      "status": 15,
+      "method": 17,
+      "plan": 17,
+      "earliest": 10,
+      "changes": 22,
+      "amount_within_cent": 3,
+      "amount_within_5pct_requested": 9
+    },
+    "mean_amount_error_pct_requested": "20.21037589843065157731400369"
+  },
+  "revised": {
+    "n": 25,
+    "matches": {
+      "status": 18,
+      "method": 21,
+      "plan": 21,
+      "earliest": 16,
+      "changes": 18,
+      "amount_within_cent": 2,
+      "amount_within_5pct_requested": 18
+    },
+    "mean_amount_error_pct_requested": "8.911926564365135172030821016"
+  },
+  "scope": "25 public development examples, not an untouched holdout or hidden test. API backend not run."
+}
