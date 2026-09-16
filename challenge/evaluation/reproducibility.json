@@ -1,0 +1,6 @@
+{
+  "output_sha256": "cc134e189324cbc3e87e6c0c56c9f31ea07aebcdc05c6be5d7967f9e10735b33",
+  "cold_vs_initial_full_run_identical": true,
+  "requests": 250,
+  "note": "Both full-run manifests returned cc134e189324cbc3e87e6c0c56c9f31ea07aebcdc05c6be5d7967f9e10735b33; final run used a separate empty OCR cache."
+}

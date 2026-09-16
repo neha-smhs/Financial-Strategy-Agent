@@ -1,363 +1,104 @@
-# HackerRank Orchestrate — Buy or Wait?
+# Buy or Wait financial strategy agent
 
-Deterministic financial affordability and payment-planning agent for the HackerRank Orchestrate September 2026 challenge.
+Post-submission revision of the September 2026 challenge solution. Reads financial CSVs, interprets evidence, forecasts all supported recurring commitments over 90 days, and compares full, partial, installment and deferred payments.
 
-The solution answers whether a user can safely complete each request in
-`dataset/requests.csv` while preserving essential commitments and the user’s
-preferred minimum balance. It produces the final prediction file at:
+## What changed
 
-```text
-output.csv
-```
+- Removed file-ID amount lookups from the runtime. Local mode reads actual PNG pixels with Tesseract LSTM OCR. A synthetic unseen receipt is included in the tests.
+- Added an optional language/vision-model evidence backend with a complete validated fact schema, source quotes, content-addressed caches, bounded API calls and output tokens, and refusal/error handling. No live model run has been measured for this revision: no API key was available.
+- Uses the same baseline forecast for safe capacity, earliest full-payment date and plan selection. Safety continues through day 90, even if the purchase finishes sooner.
+- Checks intermediate balances with debits before credits by default. Purchases happen after that day's posted flows. Opening balance is checked too.
+- Missing future debit amounts block approval; missing FX quotes raise an error instead of becoming zero. Pending credits and unsettled speculative credits are excluded.
+- Spending reductions apply only to selected recurring events. Payment schedules, totals, fees, user permissions, dates and protected categories are checked.
+- Separate arithmetic replay validates serialized payment plans. It shares the reconstructed evidence and forecast inputs; it is not an independent source-of-truth forecast.
 
-## Quick start
+## Setup and local run
 
-The solution uses Python 3.10+ standard-library modules only. No network
-access, API key, model provider, or third-party package is required.
+Python 3.10+ and the Tesseract command-line program with English traineddata are required. Runtime Python code uses the standard library. On Ubuntu, install OCR with `sudo apt-get install tesseract-ocr`; on macOS use `brew install tesseract`.
 
-From the repository root:
+Run from the repository root:
 
 ```bash
-python3 -m py_compile code/main.py
-python3 code/main.py
+python code/main.py
+python code/validate_output.py
+python code/evaluate.py
+python code/compare_revision.py
 ```
 
-The command reads the participant-facing files from `dataset/` and writes one
-row per request to the root-level `output.csv`.
+The final file is `challenge/output.csv`. Run reports are in `challenge/evaluation/`. Detailed forecast traces and content-addressed evidence caches are generated locally and ignored by Git.
 
-## Implemented architecture
-
-The implementation separates financial arithmetic from evidence handling and
-plan selection. Decimal arithmetic and deterministic rules remain authoritative
-for all money and safety decisions.
-
-```mermaid
-flowchart TD
-    A[CSV inputs and linked images] --> B[Data ingestion and joins]
-    B --> C[Evidence interpretation]
-    C --> D[Financial state reconstruction]
-    D --> E[90-day forecast]
-    E --> F[Capacity and earliest-date analysis]
-    F --> G[Plan generation]
-    G --> H[Safety replay and contract validation]
-    H --> I[output.csv]
-
-    C --> C1[Messages: explicit facts only]
-    C --> C2[Images: linked amount evidence]
-    G --> G1[Full payment]
-    G --> G2[Partial payment]
-    G --> G3[Installments]
-    G --> G4[Wait]
-    G --> G5[Flexible spending changes]
-```
-
-### Pipeline stages
-
-1. **Ingestion and joins**
-   - Loads profiles, events, requests, payment options, exchange rates,
-     messages, and image links.
-   - Joins user-level data by `user_id`, request-level data by `request_id`,
-     and evidence by `related_event_id`.
-
-2. **Evidence interpretation**
-   - Extracts explicit salary, invoice, employment, and rent-change facts from
-     supported messages.
-   - Uses the linked image amount for blank event amounts.
-   - Treats messages and images as untrusted evidence; embedded instructions
-     cannot override challenge rules.
-
-3. **Financial reconstruction**
-   - Uses `current_available_balance` as the opening balance on the request
-     date.
-   - Does not replay settled historical events because they are assumed to be
-     reflected in the opening balance.
-   - Reserves pending debits and scheduled debits.
-   - Excludes pending credits, failed events, cancelled events, and unrealized
-     investment valuations.
-   - Counts confirmed credits on their settlement date.
-   - Converts foreign-currency events using the supplied settlement-date rate.
-
-4. **Forecasting**
-   - Detects recurring streams from repeated settled history.
-   - Supports monthly, weekly, and biweekly patterns.
-   - Separates stable monthly streams when multiple recurring runs exist, such
-     as two separate salary dates.
-   - Forecasts recurring cash flows for 90 days from the request date.
-
-5. **Plan generation**
-   - Evaluates full payment, partial payment, supplied installments, waiting,
-     and permitted flexible-spending changes.
-   - Rejects plans that breach the minimum balance or miss the completion date.
-
-6. **Validation and export**
-   - Validates output columns, row coverage, amount bounds, installment schedule
-     integrity, partial-payment reconciliation, and flexible-change eligibility.
-   - Writes deterministic CSV output in the exact required column order.
-
-## Hybrid financial strategy
-
-The final implementation uses two forecast scopes because affordability capacity
-and earliest safe date answer different questions.
-
-### Capacity and affordability scope
-
-For `amount_safe_to_pay`, `affordability_status`, and immediate plan safety, the
-engine forecasts:
-
-- Expense categories the user explicitly protects
-- Recurring salary
-- Explicit future pending/scheduled events of any relevant category
-- Confirmed income extracted from messages
-
-This prevents discretionary, unprotected recurring spending from making every
-request appear unaffordable. It still protects the commitments the user has
-marked as important and retains recurring income.
-
-### Earliest-date scope
-
-`earliest_date_for_full_payment` uses the full recurring forecast, including
-unprotected recurring categories. This keeps the date estimate conservative and
-independent of the user’s payment-method preferences.
-
-### Why this strategy was selected
-
-The original all-recurring-category strategy was too conservative on the
-public examples. Controlled experiments produced the following results:
-
-| Strategy | Status | Method | Plan | Earliest date | Changes | Total exact field matches |
-|---|---:|---:|---:|---:|---:|---:|
-| All recurring categories | 12/25 | 13/25 | 10/25 | 10/25 | 22/25 | 68/150 |
-| Protected + salary capacity; full earliest-date forecast | **15/25** | **17/25** | **13/25** | **10/25** | **22/25** | **78/150** |
-
-The hybrid strategy also moved the full-dataset `not_affordable` share from
-approximately 55% to approximately 36%, closer to the 32% observed in the
-solved examples.
-
-The strategy is calibrated only against the public examples and remains
-deterministic. It does not use expected evaluation labels during inference.
-
-## Financial rules implemented
-
-### Event lifecycle
-
-| Event state | Treatment |
-|---|---|
-| `settled` before request date | Assumed included in opening balance; used as history |
-| `settled` after request date | Included as known future cash flow |
-| `pending` debit | Reserved at settlement date |
-| `pending` credit | Ignored until settled |
-| `scheduled` debit | Reserved at settlement date |
-| `scheduled` credit | Counted at settlement date |
-| `failed` | Excluded unless separately represented by valid evidence |
-| `cancelled` | Excluded |
-| `unrealized` / `non_cash` | Never treated as spendable cash |
-
-### Currency conversion
-
-- Balances and request amounts are interpreted in the user’s home currency.
-- Foreign-currency event amounts are converted with the supplied rate for the
-  event settlement date and currency direction.
-- If an exact rate is unavailable, the implementation uses the latest prior
-  supplied rate as a defensive fallback.
-
-### Recurrence
-
-- Recurrence requires repeated historical evidence.
-- Monthly streams may be split by stable day-of-month patterns.
-- Variable recurring values use recent historical values; fixed obligations use
-  recent conservative values.
-- Salary continuation is retained because the public examples demonstrate that
-  recurring income is expected to continue when history supports it.
-
-### Messages and images
-
-Relevant explicit message facts may clarify:
-
-- Salary amount or salary date
-- Confirmed invoice income
-- Employment ending
-- Temporary salary changes
-- Rent increases
-
-Pending refunds, bonuses, commissions, prizes, investment valuations, and other
-unsettled or unapproved credits are not treated as available cash.
-
-Blank event amounts are resolved through the linked image evidence. The supplied
-16-image dataset is supported with deterministic local evidence values so the
-solution remains dependency-free and runnable without OCR libraries.
-
-## Payment planning
-
-### Full payment
-
-Selected when:
-
-- The user accepts `full_payment`
-- The complete request is safe on the request date
-- The full forecast remains at or above the minimum balance
-
-### Partial payment
-
-Selected only when:
-
-- The request allows partial payment
-- The user accepts `partial_payment`
-- The safe amount is greater than zero and less than the requested amount
-- The remainder can be paid by `desired_completion_date`
-
-The plan always contains exactly two payments:
-
-```text
-request_date:amount_safe_to_pay|earliest_date_for_full_payment:remaining_amount
-```
-
-### Installments
-
-Installment plans must:
-
-- Come from `request_payment_options.csv`
-- Be accepted by the user profile
-- Be within `max_installment_months`
-- Finish by `desired_completion_date`
-- Match the supplied payment amount and dates exactly
-- Pass the chronological minimum-balance replay
-
-### Wait
-
-Waiting is eligible when:
-
-- The user accepts `full_payment`
-- Full payment is not safe immediately
-- A safe full-payment date exists within the request deadline
-
-### Flexible-spending changes
-
-Only recurring events that are:
-
-- Not in a protected category
-- Marked `stoppable`, `reducible`, or `reducible_or_stoppable`
-- In a category the user explicitly permits stopping or reducing
-
-may be changed. At most three changes are serialized as:
-
-```text
-stop:<event_id>
-reduce_to:<event_id>:<new_amount>
-```
-
-## Output contract
-
-`output.csv` contains exactly these columns, in this order:
-
-```text
-request_id,amount_safe_to_pay,affordability_status,recommended_payment_method,payment_plan,earliest_date_for_full_payment,spending_changes_needed,decision_explanation
-```
-
-Allowed statuses:
-
-- `affordable_now`
-- `affordable_with_plan`
-- `affordable_later`
-- `not_affordable`
-
-Allowed methods:
-
-- `full_payment`
-- `partial_payment`
-- `installments`
-- `wait`
-- `not_recommended`
-
-The implementation enforces:
-
-```text
-0 <= amount_safe_to_pay <= requested_amount
-```
-
-## Validation and reproducibility
-
-The final run was checked for:
-
-- 250 output rows for 250 evaluation requests
-- Exact output columns and ordering
-- Valid status and payment-method values
-- Safe-amount bounds
-- Chronological payment plans
-- Installment plans matching supplied options
-- Partial-payment plans adding exactly to the requested amount
-- Spending changes targeting eligible flexible events
-- Minimum-balance safety replay for every recommended plan
-
-Run the generator again with:
+For all regression tests, install Pillow for the synthetic receipt fixture:
 
 ```bash
-python3 code/main.py
+python -m pip install Pillow
+python -m unittest discover -s code -p 'test_*.py'
 ```
 
-The implementation is deterministic for the supplied dataset and does not make
-network or model-provider calls.
+## Optional model mode
 
-## Repository layout
+Set environment variables outside source control:
 
-```text
-.
-├── AGENTS.md
-├── README.md
-├── problem_statement.md
-├── code/
-│   ├── main.py                         # Runnable decision engine
-│   ├── README.md                       # Short implementation guide
-│   └── evaluation/
-│       ├── main.py
-│       └── usage_report.md             # Final token/cost report
-├── dataset/                            # Participant-facing input data
-├── output.csv                          # Generated predictions
-├── code.zip                            # Submission package
-└── log.txt                             # Required chat transcript
-```
-
-The input files under `dataset/` are not modified by the generator.
-
-## Known limitations and assumptions
-
-1. **Forecast-policy uncertainty** — the public examples do not fully specify
-   the organizer’s exact variable-spending and reserve policy. Safe-amount
-   accuracy remains weaker than method and plan validity.
-2. **Image extraction** — the supplied image evidence is resolved with local
-   deterministic values rather than a general OCR pipeline. New image sets
-   would require an OCR integration or updated evidence resolver.
-3. **Message parsing** — message interpretation uses deterministic patterns and
-   is not a general multilingual language model.
-4. **Opening balance semantics** — settled historical events are assumed to be
-   reflected in `current_available_balance`.
-5. **FX fallback** — every required supplied conversion is expected to have an
-   exact rate; the latest-prior-rate fallback exists only for defensive
-   handling of an unexpected missing quote.
-6. **Installment duration** — the number of payments is used as the practical
-   duration check against `max_installment_months`.
-
-These limitations are documented rather than hidden. The implementation
-prioritizes deterministic, auditable, and contract-valid recommendations.
-
-## Submission artifacts
-
-Prepare these files for submission:
-
-| File | Purpose |
-|---|---|
-| `code.zip` | Runnable solution, documentation, and `evaluation/usage_report.md` |
-| `output.csv` | One prediction per evaluation request |
-| `log.txt` | Required chat transcript |
-
-Create or refresh the package with:
+- `OPENAI_API_KEY`: provider credential.
+- `BUY_OR_WAIT_MODEL`: an available model supporting images and Chat Completions JSON output.
+- `OPENAI_BASE_URL`: optional compatible HTTPS endpoint; defaults to `https://api.openai.com/v1`.
+- `BUY_OR_WAIT_MAX_API_CALLS`: includes retries, default 600 per process/run.
+- `BUY_OR_WAIT_MAX_OUTPUT_TOKENS`: default 800 per call.
+- `BUY_OR_WAIT_INPUT_USD_PER_MILLION` and `BUY_OR_WAIT_OUTPUT_USD_PER_MILLION`: provider prices for measured cost reporting. These are reporting inputs, not a dollar spending cap.
 
 ```bash
-rm -f code.zip
-zip -qr code.zip code
+python code/main.py --backend api --evaluation-dir evaluation/api --output output_api.csv
+python code/validate_output.py --backend api --output output_api.csv --report evaluation/api_validation.json
+python code/evaluate.py --backend api --report-dir evaluation/api_samples
 ```
 
-The usage report states that this solution uses no model provider, makes zero
-model calls, and has zero model-token cost.
+The model extracts facts only; it cannot select or approve a payment. Message quotes must occur in the supplied source. Image quotes cannot be independently verified against pixels by the schema checker. Schema validation checks structure and types, not factual truth. Invalid model evidence fails the run without writing a partial output. Cache misses invoke the API; this is not a guaranteed offline mode. The program reads environment variables and does not automatically load `.env`.
 
-For the complete challenge specification, see
-[`problem_statement.md`](./problem_statement.md).
+## Measured revision results
+
+Local OCR + rules; 25 public development examples; identical scoring for submitted baseline and revised code:
+
+| Metric | Submitted baseline | Revised |
+|---|---:|---:|
+| Affordability status | 60% | 72% |
+| Payment method | 68% | 84% |
+| Payment plan, normalized amounts | 68% | 84% |
+| Earliest full-payment date | 40% | 64% |
+| Amount within 5% of requested amount | 36% | 72% |
+| Amount within one cent | 12% | 8% |
+| Spending changes | 88% | 72% |
+| Mean amount error / requested amount | 20.21% | 8.91% |
+
+All 250 requests produce output. 185 recommended plans pass independent arithmetic replay; 65 requests are not recommended, including 7 with unpriced essential obligations. These results do not establish hidden-test accuracy or real-world safety. Payment-plan baseline here is 17/25 after numeric normalization; the old README reported 13/25. Do not compare differently formatted plan strings as if they were different cash payments.
+
+See `evaluation/comparison.md`, `evaluation/output_validation.json`, and `evaluation/test_results.txt` inside `challenge/` for measured evidence. `evaluation/baseline/submitted_engine.py` preserves the old engine solely for comparison; its file-specific amounts are never imported by the revised inference path.
+
+## Architecture
+
+`main.py` joins request data and calls `evidence.py` / `api_evidence.py` for extraction. `forecast.py` builds cash-flow events and a consistent 90-day forecast. `planner.py` enumerates and ranks eligible plans, then replays payments. `validate_output.py` parses the exported CSV and verifies schedules and balances again. `evaluate.py` and `compare_revision.py` load public labels only for scoring, never as inference features.
+
+## Assumptions and remaining limitations
+
+- Settled historical transactions are already included in opening balance.
+- Recurrence is inferred, not guaranteed. Local salary reconstruction and narrow bilingual message rules still need broader testing for multiple income streams and unfamiliar wording.
+- Variable spending uses a median estimate; unusual future bills may exceed it.
+- OCR is general rather than file-specific, but can misread handwritten totals or decimal digits. A successful OCR call does not prove the amount is correct. Extracted text and candidate amounts are retained for review.
+- Unresolved past settled images are disclosed and excluded from recurrence. Unknown future obligations prevent safety certification.
+- The model schema checks and network path were tested using mocked responses. A live model evaluation remains outstanding.
+- Use ordinary Python, not `python -O`: contract checks use assertions.
+- No other project's implementation or model caches were copied. Architecture inspiration: separation of model-assisted evidence from deterministic financial decisions in https://github.com/trickymind1324/personal-finance-agent. This revision reuses and extends our own earlier modular implementation.
+
+## Packaging
+
+From `challenge/`:
+
+```bash
+python code/package_submission.py --destination ../revision-deliverables
+```
+
+The package includes source, dataset/media, predictions and evaluation evidence; excludes secrets, caches, generated traces and chat logs. Usage reporting distinguishes local neural OCR from LLM calls. API costs exclude local compute and development-assistant usage.
+
+Generated ZIP archives are kept out of Git; recreate the current archive with the packaging command above. The original submitted archive remains available in Git history.
+
+## Published branch artifact policy
+
+This branch publishes source and aggregate reports only. The committed `output.csv` remains the original submission; run the generator to create revised predictions. Row-level sample predictions, OCR evidence, and conversation logs are not published with this revision. Evaluation scripts regenerate detailed reports locally.

@@ -1,0 +1,8 @@
+{
+  "rows": 250,
+  "recommended_plans_verified": 185,
+  "not_recommended": 65,
+  "unpriced_obligations": 7,
+  "failures": [],
+  "scope": "Safety relative to reconstructed forecast; does not claim hidden ground-truth accuracy."
+}
