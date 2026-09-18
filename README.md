@@ -86,7 +86,6 @@ See `evaluation/comparison.md`, `evaluation/output_validation.json`, and `evalua
 - Unresolved past settled images are disclosed and excluded from recurrence. Unknown future obligations prevent safety certification.
 - The model schema checks and network path were tested using mocked responses. A live model evaluation remains outstanding.
 - Use ordinary Python, not `python -O`: contract checks use assertions.
-- No other project's implementation or model caches were copied. Architecture inspiration: separation of model-assisted evidence from deterministic financial decisions in https://github.com/trickymind1324/personal-finance-agent. This revision reuses and extends our own earlier modular implementation.
 
 ## Packaging
 
